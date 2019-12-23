@@ -1,11 +1,12 @@
 backend:
   name: git-gateway
-  repo: cymrusociety/myWebsite   #githubのリポジトリ
+  branch: master
 
 publish_mode: editorial_workflow
 
-# media_folder: "static/images/uploads" #アップロードされたファイルを保存するフォルダパス
-# public_folder: "/images/uploads" #アップロードされたファイルがアクセスされるフォルダパス
+media_folder: "img" #アップロードされたファイルを保存するフォルダパス
+public_folder: "img" #アップロードされたファイルがアクセスされるフォルダパス
+
 collections:
   - name: "post"
     label: "Post"
@@ -14,10 +15,10 @@ collections:
     slug: "{{slug}}"
     fields: # 管理画面に追加したいフォームを追加していく
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text", required: false}
-      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
-      - {label: "Featured Image Description", name: "featuredImageDescription", widget: "text", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Category", name: "categories", widget: "text", required: false}
-      - {label: "Tag", name: "tag", widget: "text", required: false}
+      # - {label: "Description", name: "description", widget: "text", required: false}
+      # - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      # - {label: "Featured Image Description", name: "featuredImageDescription", widget: "text", required: false}
+      # - {label: "Publish Date", name: "date", widget: "datetime"}
+      # - {label: "Category", name: "categories", widget: "text", required: false}
+      # - {label: "Tag", name: "tag", widget: "text", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

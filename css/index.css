@@ -250,6 +250,7 @@ h1 {
   background-image: url(https://user-images.githubusercontent.com/19469896/60050503-bcd4ae00-970b-11e9-8c85-04bbcea37b94.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 /* header */

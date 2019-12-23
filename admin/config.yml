@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: [cymrusociety/myWebsite]   #githubのリポジトリ
+  repo: cymrusociety/myWebsite   #githubのリポジトリ
 
 publish_mode: editorial_workflow
 

@@ -283,3 +283,25 @@ header > img {
 .header__nav--flexitem--link {
   padding: 8px 24px;
 }
+
+/* news */
+.blog__outline {
+  /* width: 80%; */
+  width: 860px;
+  color: #fff;
+  background: rgba(0, 0, 0, .5);
+  margin: 0 auto;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  padding: 24px;
+}
+
+.blog__outline--header {
+  margin-bottom: 8px;
+}
+
+.blog__outline--list--link {
+  color: #fff;
+}

@@ -143,53 +143,7 @@ pre {
 }
 
 
-
-
-
-
-.tag {
-  display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-  font-size: 0.625em; 
-  padding: 2px 4px;
-  margin-left: 0.8em; 
-  background-color: var(--red);
-  color: var(--white);
-  border-radius: 0.25em; 
-  text-decoration: none;
-}
-a[href].tag,
-a[href].tag:visited {
-  color: #fff;
-}
-
-
-.warning {
-  background-color: #ffc;
-  padding: 1em 0.625em; 
-}
-.warning ol:only-child {
-  margin: 0;
-}
-
-
-.direct-link {
-  font-family: sans-serif;
-  text-decoration: none;
-  font-style: normal;
-  margin-left: .1em;
-}
-a[href].direct-link,
-a[href].direct-link:visited {
-  color: transparent;
-}
-a[href].direct-link:focus,
-a[href].direct-link:focus:visited,
-:hover > a[href].direct-link,
-:hover > a[href].direct-link:visited {
-  color: #aaa;
-} */
+ */
 
 /* common */
 * {
@@ -256,7 +210,7 @@ header > img {
 
 /* news */
 .blog__outline {
-  width: 860px;
+  width: 55%;
   color: rgb(230, 230, 230);
   background: rgba(0, 0, 0, .5);
   margin: 0 auto;
@@ -300,6 +254,7 @@ header > img {
 .postlist-link {
   display: inline-block;
   padding: 0.25em 0.1875em; 
+  color: rgb(230, 230, 230);
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
@@ -307,4 +262,38 @@ header > img {
 .tmpl-home .postlist-link {
   font-size: 1.1875em; 
   font-weight: 700;
+}
+
+.tag {
+  display: inline-block;
+  vertical-align: text-top;
+  text-transform: uppercase;
+  font-size: 0.625em; 
+  padding: 2px 4px;
+  margin-left: 0.8em; 
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 0.25em; 
+  text-decoration: none;
+}
+a[href].tag,
+a[href].tag:visited {
+  color: #fff;
+}
+
+.direct-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #aaa;
 }

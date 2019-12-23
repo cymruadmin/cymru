@@ -261,11 +261,9 @@ header > img {
 .header__flexcontainer {
   display: flex;
   padding: 8px;
-  position: fixed;
   width: 100vw;
   background: rgba(255,255,255,.88);
   border-bottom: 1px solid tomato;
-  z-index: 9999;
 }
 
 .header__flexitem {

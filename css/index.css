@@ -223,6 +223,28 @@ a[href].direct-link:focus:visited,
   color: #aaa;
 } */
 
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(44, 44, 44);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+}
+
 /* header */
 header > img {
   height: 75px;

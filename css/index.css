@@ -250,15 +250,10 @@ header > img {
   height: 75px;
 }
 
-.header__container {
-  height: 100vh;
+.header__flexcontainer {
   background-image: url("/img/headerBg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-}
-
-.header__flexcontainer {
   display: flex;
   padding: 8px;
   width: 100vw;

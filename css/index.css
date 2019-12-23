@@ -286,9 +286,8 @@ header > img {
 
 /* news */
 .blog__outline {
-  /* width: 80%; */
   width: 860px;
-  color: #fff;
+  color: rgb(230, 230, 230);
   background: rgba(0, 0, 0, .5);
   margin: 0 auto;
   position: absolute;
@@ -303,5 +302,5 @@ header > img {
 }
 
 .blog__outline--list--link {
-  color: #fff;
+  color: rgb(230, 230, 230);
 }

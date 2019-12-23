@@ -5,9 +5,11 @@ eleventyNavigation:
   order: 1
 ---
 
-<h1 class="blog__outline--header">News</h1>
+<div class="blog__outline">
+  <h1 class="blog__outline--header">ニュース</h1>
+  
+  {% set postslist = collections.posts | head(-5) %}
+  {% include "postslist.njk" %}
 
-{% set postslist = collections.posts | head(-5) %}
-{% include "postslist.njk" %}
-
-<p>上記5件以外の<a href="{{ '/posts/' | url }}">アーカイブ</a>.</p>
+  <p>上記5件以外の<a href="{{ '/posts/' | url }}">アーカイブ</a>.</p>
+</div>

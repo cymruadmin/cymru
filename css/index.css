@@ -143,39 +143,7 @@ pre {
 }
 
 
-.postlist {
-  list-style: none;
-  padding: 0;
-}
-.postlist-item {
-  counter-increment: start-from -1;
-}
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
-}
-.postlist-date,
-.postlist-item:before {
-  font-size: 0.8125em; 
-  color: var(--darkgray);
-}
-.postlist-date {
-  word-spacing: -0.5px;
-}
-.postlist-link {
-  display: inline-block;
-  padding: 0.25em 0.1875em; 
-}
-.postlist-item-active .postlist-link {
-  font-weight: bold;
-}
-.tmpl-home .postlist-link {
-  font-size: 1.1875em; 
-  font-weight: 700;
-}
+
 
 
 
@@ -247,6 +215,7 @@ h1 {
 
 /* eye-catch */
 .eye-catch {
+  height: 100vh;
   background-image: url(https://user-images.githubusercontent.com/19469896/60050503-bcd4ae00-970b-11e9-8c85-04bbcea37b94.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -292,7 +261,7 @@ header > img {
   background: rgba(0, 0, 0, .5);
   margin: 0 auto;
   position: absolute;
-  bottom: 50px;
+  bottom: 30%;
   right: 0;
   left: 0;
   padding: 24px;
@@ -304,4 +273,38 @@ header > img {
 
 .blog__outline--list--link {
   color: rgb(230, 230, 230);
+}
+
+.postlist {
+  list-style: none;
+  padding: 0;
+}
+.postlist-item {
+  counter-increment: start-from -1;
+}
+.postlist-item:before {
+  display: inline-block;
+  pointer-events: none;
+  content: "" counter(start-from, decimal-leading-zero) ". ";
+  line-height: 100%;
+  text-align: right;
+}
+.postlist-date,
+.postlist-item:before {
+  font-size: 0.8125em; 
+  color: var(--darkgray);
+}
+.postlist-date {
+  word-spacing: -0.5px;
+}
+.postlist-link {
+  display: inline-block;
+  padding: 0.25em 0.1875em; 
+}
+.postlist-item-active .postlist-link {
+  font-weight: bold;
+}
+.tmpl-home .postlist-link {
+  font-size: 1.1875em; 
+  font-weight: 700;
 }

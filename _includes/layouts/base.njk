@@ -10,17 +10,19 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body>
-    <header class="header__flexcontainer">
-      <img src="img/header.png">
-      <nav class="header__flexitem">
-        <ul class="header__nav--flexcontainer">
-          <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="#about">本学会について</a></li>
-          <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="#desc">概要</a></li>
-          <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="#docs">資料</a></li>
-          <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="mailto:nihoncymrugakkai@gmail.com">お問い合わせ</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="eye-catch">
+      <header class="header__flexcontainer">
+        <img src="img/header.png">
+        <nav class="header__flexitem">
+          <ul class="header__nav--flexcontainer">
+            <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="#about">本学会について</a></li>
+            <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="#desc">概要</a></li>
+            <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="#docs">資料</a></li>
+            <li class="header__nav--flexitem"><a class="header__nav--flexitem--link" href="mailto:nihoncymrugakkai@gmail.com">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       <div class="warning">
